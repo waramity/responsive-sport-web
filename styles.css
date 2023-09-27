@@ -1,0 +1,12 @@
+:root {
+  --main-font: Arial, sans-serif;
+  --text-secondary-color: #e7e7e7 !important;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+.text-secondary {
+    color: var(--text-secondary-color);
+} 

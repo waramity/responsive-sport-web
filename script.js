@@ -25,6 +25,7 @@ function createSections(data, containerSelector) {
 
     const header = document.createElement("h2");
     header.textContent = category;
+    header.classList.add("text-secondary");
     section.appendChild(header);
 
     let indexSubCategory = 1;
@@ -32,10 +33,15 @@ function createSections(data, containerSelector) {
       const indexHeader = document.createElement("span");
       indexHeader.textContent = indexSubCategory;
 
+      const subHeader = document.createElement("h3");
+      subHeader.textContent = subcategory
+
       const p = document.createElement("p");
       p.textContent = data[category][subcategory];
 
-      p.insertBefore(indexHeader, p.firstChild);
+      subHeader.insertBefore(indexHeader, subHeader.firstChild);
+
+      section.appendChild(subHeader);
       section.appendChild(p);
       indexSubCategory++;
     }
