@@ -1,12 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
 :root {
-  --main-font: Arial, sans-serif;
-  --text-secondary-color: #e7e7e7 !important;
+  --main-font: "Questrial", "Roboto", sans-serif;
+  --header-color: #e7e7e7;
+  --header-font: "Questrial", sans-serif;
+  --section-color: #c2c2c2;
+  --section-font: "Roboto", sans-serif;
 }
 
 body {
   font-family: var(--main-font);
 }
 
-.text-secondary {
-    color: var(--text-secondary-color);
-} 
+.header {
+  color: var(--header-color);
+}
+
+.section {
+  color: var(--section-color);
+}

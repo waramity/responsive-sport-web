@@ -25,7 +25,7 @@ function createSections(data, containerSelector) {
 
     const header = document.createElement("h2");
     header.textContent = category;
-    header.classList.add("text-secondary");
+    header.classList.add("header");
     section.appendChild(header);
 
     let indexSubCategory = 1;
